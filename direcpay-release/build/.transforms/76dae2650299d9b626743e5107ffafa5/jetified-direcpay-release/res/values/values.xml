@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="active_color">#4c4c4c</color>
+    <color name="blue">#28469e</color>
+    <color name="button_color">#02B9F3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="dark_red">#ce3c39</color>
+    <color name="light_grey">#eeeded</color>
+    <color name="loader_background">#8F000000</color>
+    <color name="nonactive_color">#969696</color>
+    <color name="red">#da3939</color>
+    <color name="textColor">#2a2a2a</color>
+    <color name="white">#ffffff</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="banner_padding">40dp</dimen>
+    <dimen name="btn_margin">20dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="dashboard_icon_size">24dp</dimen>
+    <dimen name="dashboard_menu_header_txt_size">18dp</dimen>
+    <dimen name="dashboard_menu_text_size">16dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" ns1:override="true">12sp</dimen>
+    <dimen name="design_bottom_navigation_text_size" ns1:override="true">12sp</dimen>
+    <dimen name="design_fab_image_size" ns1:override="true">30dp</dimen>
+    <dimen name="edit_text_bottom_padding">12dp</dimen>
+    <dimen name="edt_icon_size">24dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="float_btn_size">45dp</dimen>
+    <dimen name="floating_top_padding">12dp</dimen>
+    <dimen name="font_size_for_extra_large_text">22sp</dimen>
+    <dimen name="font_size_for_extra_smaller_text">12sp</dimen>
+    <dimen name="font_size_for_extrra_large_text">24sp</dimen>
+    <dimen name="font_size_for_extrrra_large_text">26sp</dimen>
+    <dimen name="font_size_for_header_title">18sp</dimen>
+    <dimen name="font_size_for_large_text">20sp</dimen>
+    <dimen name="font_size_for_med_text">15sp</dimen>
+    <dimen name="font_size_for_medium_text">16sp</dimen>
+    <dimen name="font_size_for_smaller_text">14sp</dimen>
+    <dimen name="form_padding">20dp</dimen>
+    <dimen name="form_text_size">16sp</dimen>
+    <dimen name="img_edt_dlt_size">24sp</dimen>
+    <dimen name="inner_nav_item_height">30dp</dimen>
+    <dimen name="logo_main_height">100dp</dimen>
+    <dimen name="logo_main_width">160dp</dimen>
+    <dimen name="nav_item_height">45dp</dimen>
+    <dimen name="pager_margin">5dp</dimen>
+    <dimen name="profile_icon_size">30dp</dimen>
+    <dimen name="slide_list_img_width">22dp</dimen>
+    <dimen name="tick_height">25dp</dimen>
+    <dimen name="tick_width">25dp</dimen>
+    <dimen name="toolbar_icon_size">20dp</dimen>
+    <dimen name="toolbar_logo_height">60dp</dimen>
+    <dimen name="toolbar_logo_width">60dp</dimen>
+    <integer name="OTPLength">4</integer>
+    <integer name="amountLength">50</integer>
+    <integer name="mobileNoLength">9</integer>
+    <integer name="mobileNoLengthWihCountryCode">14</integer>
+    <integer name="pinLength">4</integer>
+    <string name="Please_add_billing_details">Please add billing details</string>
+    <string name="Please_set_shipping_details">Please set shipping details</string>
+    <string name="amazon_pay">Amazon Pay</string>
+    <string name="amount_to_be_paid">Amount to be paid</string>
+    <string name="app_name">DirecPay</string>
+    <string name="bayanpay_wallet_balance">BayanPay Wallet Balance</string>
+    <string name="bullet">\u2022</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_with_pin">Confirm With PIN</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="cvv">CVV</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="do_you_want_to_delete_this_saved_card">Do you want to delete this saved card ?</string>
+    <string name="enter_card_holder_s_name">Enter card Holder\'s name</string>
+    <string name="enter_card_number">Enter card number</string>
+    <string name="enter_valid_card_no">Enter valid card number</string>
+    <string name="enter_valid_cvv">Enter valid cvv</string>
+    <string name="enter_valid_expiry">Enter valid expiry date</string>
+    <string name="enter_valid_vpa">Enter valid VPA</string>
+    <string name="enter_virtual_payment_address">Enter Virtual Payment Address</string>
+    <string name="error_amount">Invalid Amount</string>
+    <string name="error_billing_details">Please add billing details</string>
+    <string name="error_card_holder_name">Invalid Card Holder Name</string>
+    <string name="error_card_number">Invalid Card Number</string>
+    <string name="error_card_type">Invalid Card Type</string>
+    <string name="error_card_verification_value">Invalid Card verification value</string>
+    <string name="error_channel_mode">Channel mode is not valid</string>
+    <string name="error_city">city name is not valid</string>
+    <string name="error_country">country name is not valid</string>
+    <string name="error_currency">Invalid Currency</string>
+    <string name="error_email_id">Email id is not valid</string>
+    <string name="error_expiry_month">Invalid expiry month</string>
+    <string name="error_expiry_year">Invalid expiry year</string>
+    <string name="error_fail_url">Invalid Failue URL</string>
+    <string name="error_gateway_id">Invalid Gateway ID</string>
+    <string name="error_landline">Landline number is not valid</string>
+    <string name="error_last_name">Last name is not valid</string>
+    <string name="error_mobile">Mobile is not valid</string>
+    <string name="error_order">Merchant Order number is not valid</string>
+    <string name="error_pay_mode">Invalid Pay Mode</string>
+    <string name="error_payment_details">Invalid Payment Details</string>
+    <string name="error_pincode">pincode is not valid</string>
+    <string name="error_shipping_details">Please set shipping details</string>
+    <string name="error_state">state name is not valid</string>
+    <string name="error_street1">street1 name is not valid</string>
+    <string name="error_street2">Street2 name is not valid</string>
+    <string name="error_success_url">Invalid Success URL</string>
+    <string name="error_transaction_type">Invalid Transaction Type</string>
+    <string name="error_transactiondetails">Please set transaction details</string>
+    <string name="expiry_date_mm_yy">Expiry Date(MM/YY)</string>
+    <string name="first_name_error">First name is not valid</string>
+    <string name="hint_country_code_with_number">+966 5XXXXXXXX</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="no">No</string>
+    <string name="other_bank">Other Banks</string>
+    <string name="other_payments_options">Other Payments Options</string>
+    <string name="other_wallets">Other Wallets</string>
+    <string name="pay">Pay</string>
+    <string name="please_select_bank">Please select bank</string>
+    <string name="please_select_wallet">Please select wallet</string>
+    <string name="provide_otp">Provide the OTP you have received to your registered Mobile</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="save_this_card_for_future_use">Save this card for future use</string>
+    <string name="saved_payment_options">Saved Payment Options</string>
+    <string name="seconds">Seconds</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="submit">Submit</string>
+    <string name="transaction_amount">Transaction Amount</string>
+    <string name="upi">UPI</string>
+    <string name="verifyOTP">Verify with OTP</string>
+    <string name="verifyOTPForKyc">Verify with OTP</string>
+    <string name="wait_your_otp_is_on_the_way">Wait! your OTP is on the way!</string>
+    <string name="wallet">Wallet</string>
+    <string name="welcome">Welcome</string>
+    <string name="yes">Yes</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Bayan_ButtonStyle">
+
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/bayanpay_button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:background">@color/button_color</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:ems">10</item>
+    </style>
+    <style name="CustomeDialog" parent="AppTheme">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+    <style name="Outline_ButtonStyle">
+
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/outline_button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+    <style name="Sdk_EditTextTheme" parent="@android:style/Widget.EditText">
+        <item name="colorControlNormal">@color/nonactive_color</item>
+        <item name="colorControlActivated">@color/nonactive_color</item>
+        <item name="colorControlHighlight">@color/nonactive_color</item>
+        <item name="android:textSize">14dp</item>
+
+    </style>
+    <style name="Sdk_TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/nonactive_color</item>
+        <item name="android:textSize">14dp</item>
+
+    </style>
+    <style name="error_appearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <declare-styleable name="CustomFonts">
+        <attr name="fontType">
+            <enum name="regular" value="1"/>
+            <enum name="italic" value="2"/>
+            <enum name="bold" value="3"/>
+            <enum name="bold_it" value="4"/>
+            <enum name="semibold" value="5"/>
+            <enum name="calligraphy" value="6"/>
+        </attr>
+        <attr format="integer" name="compoundDrawableWidth"/>
+        <attr format="integer" name="compoundDrawableHeight"/>
+        <attr format="boolean" name="showCountryCode"/>
+
+
+        <attr name="inputtype">
+            <enum name="number" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="password" value="3"/>
+            <enum name="numberPassword" value="4"/>
+            <enum name="email" value="5"/>
+            <enum name="numberDecimal" value="6"/>
+            <enum name="phone" value="7"/>
+
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="ErrorEditLayout">
+            <attr format="string" name="errorText"/>
+            <attr format="string" name="text"/>
+        </declare-styleable>
+    <declare-styleable name="NumericInputField">
+        <attr name="type">
+            <enum name="numeric" value="1"/>
+            <enum name="password" value="2"/>
+        </attr>
+        <attr name="length">
+            <enum name="one" value="1"/>
+            <enum name="three" value="3"/>
+            <enum name="four" value="4"/>
+            <enum name="six" value="6"/>
+        </attr>
+        <attr name="inputType">
+            <enum name="number" value="1"/>
+            <enum name="alphanumeric" value="2"/>
+        </attr>
+        <attr name="digits">
+            <enum name="one" value="1"/>
+            <enum name="two" value="2"/>
+            <enum name="three" value="3"/>
+            <enum name="four" value="4"/>
+            <enum name="eight" value="8"/>
+            <enum name="nineteen" value="19"/>
+        </attr>
+        <attr format="integer" name="padding"/>
+        <attr format="integer" name="textSize"/>
+        <attr format="color" name="textcolor"/>
+    </declare-styleable>
+    <declare-styleable name="SearchableSpinner">
+        <attr format="string" name="hintText"/>
+    </declare-styleable>
+    <declare-styleable name="searchableView">
+        <attr format="string" name="hint"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <LinearLayout
+        android:id="@+id/layoutCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|top"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/ic_dp_sdk_uncheck"
+                android:drawablePadding="2dp" />
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    android:orientation="vertical">
+
+                    <customviews.CustomTextView
+                        android:id="@+id/txtPayMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kotak credit Card"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <customviews.CustomTextView
+                        android:id="@+id/txtMaskedCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="4166 **** **** 4568"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:gravity="right"
+                    android:src="@drawable/ic_bin"
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutExpandCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <customviews.CustomeTextInputLayout
+                android:id="@+id/layoutcvv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginLeft="95dp"
+                android:hint="CVV"
+                android:orientation="vertical"
+
+
+                app:hintTextAppearance="@style/Sdk_TextInputLayout">
+
+                <customviews.CVVEditText
+                    android:id="@+id/edtCVV"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edt_black_box"
+                    android:gravity="center"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:textDirection="locale" />
+            </customviews.CustomeTextInputLayout>
+
+            <customviews.CustomButton
+                android:id="@+id/btnPay"
+                style="@style/ButtonStyle"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/pay" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#969696"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

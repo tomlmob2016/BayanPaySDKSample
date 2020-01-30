@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/paymode_blocks"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_child_paymode"
+            >
+
+
+            <RadioButton
+                android:id="@+id/rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/ic_dp_sdk_wallet"
+                android:drawablePadding="2dp" />
+
+
+            <customviews.CustomTextView
+                android:id="@+id/txtPayMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:padding="10dp"
+                android:text="@string/wallet"
+                android:textColor="#000"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="#969696"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutExpandCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <dp.toml.directpay.WalletsOptions
+                android:id="@+id/walletsOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </dp.toml.directpay.WalletsOptions>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll_main"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <customviews.CustomeTextInputLayout
+            android:id="@+id/layoutCardNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|left"
+            android:animateLayoutChanges="true"
+            android:hint="@string/enter_card_number"
+            android:orientation="vertical"
+            app:hintTextAppearance="@style/Sdk_TextInputLayout">
+
+            <customviews.CardEditText
+                android:id="@+id/edtCardNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="start"
+                android:inputType="phone"
+                android:maxLength="19"
+                android:nextFocusDown="@id/edtCardHolder"
+                android:textAlignment="viewStart"
+                android:textDirection="ltr"
+                android:theme="@style/Sdk_EditTextTheme" />
+        </customviews.CustomeTextInputLayout>
+
+        <customviews.CustomeTextInputLayout
+            android:id="@+id/layoutCarHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|left"
+            android:layout_marginTop="12dp"
+            android:hint="@string/enter_card_holder_s_name"
+            android:orientation="vertical"
+            app:hintTextAppearance="@style/Sdk_TextInputLayout">
+
+            <dp.toml.directpay.bayanpay.CustomEditText
+                android:id="@+id/edtCardHolder"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="start|left"
+                android:inputType="text"
+                android:nextFocusDown="@id/edtExpiry"
+                android:padding="5dp"
+                android:textDirection="locale"
+
+                android:theme="@style/Sdk_EditTextTheme" />
+        </customviews.CustomeTextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <customviews.CustomeTextInputLayout
+                android:id="@+id/layoutExpiryDate"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="5.5"
+                android:hint="@string/expiry_date_mm_yy"
+                android:orientation="vertical"
+                app:hintTextAppearance="@style/Sdk_TextInputLayout">
+
+                <customviews.CardExpEditText
+                    android:id="@+id/edtExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="start|left"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="5dp"
+                    android:theme="@style/Sdk_EditTextTheme" />
+            </customviews.CustomeTextInputLayout>
+
+            <customviews.CustomeTextInputLayout
+                android:id="@+id/layoutCVV"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|left"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="4.5"
+                android:hint="@string/cvv"
+                android:orientation="vertical"
+                app:hintTextAppearance="@style/Sdk_TextInputLayout">
+
+                <customviews.CVVEditText
+                    android:id="@+id/edtCVV"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="start|left"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:theme="@style/Sdk_EditTextTheme" />
+            </customviews.CustomeTextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <customviews.CustomCheckBox
+            android:id="@+id/chkSaveCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/save_this_card_for_future_use" />
+    </LinearLayout>
+
+    <customviews.CustomButton
+        android:id="@+id/btnPay"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:text="@string/pay" />
+</LinearLayout>

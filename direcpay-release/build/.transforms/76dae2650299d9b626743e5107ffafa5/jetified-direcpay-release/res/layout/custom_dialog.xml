@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="10dp"
+    app:cardCornerRadius="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/do_you_want_to_delete_this_saved_card"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnno"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/no"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+
+                />
+
+            <TextView
+                android:id="@+id/txtempty"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/btnyes"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="@string/yes"
+
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

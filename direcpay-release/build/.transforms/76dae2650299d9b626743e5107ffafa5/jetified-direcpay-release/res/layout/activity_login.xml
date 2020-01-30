@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bayanpay.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="22dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_bw_register_logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_layout"
+                android:orientation="vertical"
+                android:layout_marginTop="14dp"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textInputLayoutMobileNumber"
+                        android:layout_alignBottom="@+id/textInputLayoutMobileNumber">
+
+                        <ImageView
+                            android:id="@+id/imgFlag"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/saudiflagcircle" />
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/layoutImg">
+
+                           <dp.toml.directpay.bayanpay.CustomEditText
+                android:textDirection="locale"
+                            android:id="@+id/edtMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_country_code_with_number"
+                            android:inputType="number"
+                            android:layoutDirection="ltr"
+                            android:maxLength="@integer/mobileNoLengthWihCountryCode"
+                            android:maxLines="1"
+                            android:paddingTop="@dimen/floating_top_padding"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/form_text_size"
+                            app:showCountryCode="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <dp.toml.directpay.bayanpay.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pin"
+                        android:visibility="visible"
+                        android:textColor="@color/textColor"
+                        android:textSize="18dp" />
+
+                    <dp.toml.directpay.bayanpay.NumericInputField
+                        android:id="@+id/edtMPIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="ltr"
+                        android:visibility="visible"
+                        app:length="four"
+                        app:textcolor="#000000"
+                        app:type="password" />
+                </LinearLayout>
+
+
+                  <customviews.CustomButton
+
+                    android:id="@+id/btnLogin"
+                    style="@style/Bayan_ButtonStyle"
+                    android:text="Login" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:orientation="vertical"
+
+      android:padding="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <customviews.ErrorEditLayout
+        android:id="@+id/layoutCardNo"
+        android:orientation="vertical"
+        app:errorText="Enter valid card number"
+        app:text="Enter card number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <customviews.CardEditText
+android:theme="@style/Sdk_EditTextTheme"
+            android:id="@+id/edtCardNo"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:padding="5dp"
+            android:nextFocusDown="@id/edtCardHolder"
+            android:background="@drawable/edt_normal"
+            android:maxLength="19"
+            android:layout_height="45dp" />
+    </customviews.ErrorEditLayout>
+
+      <customviews.ErrorEditLayout
+          android:id="@+id/layoutCarHolder"
+          android:orientation="vertical"
+          android:layout_marginTop="12dp"
+          app:errorText="Enter valid Card Holder Name"
+          app:text="Enter Card Holder Name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+           <EditText
+                android:theme="@style/Sdk_EditTextTheme"
+              android:id="@+id/edtCardHolder"
+              android:layout_width="match_parent"
+              android:inputType="text"
+              android:padding="5dp"
+              android:nextFocusDown="@id/edtExpiry"
+              android:background="@drawable/edt_normal"
+              android:layout_height="45dp" />
+      </customviews.ErrorEditLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <customviews.ErrorEditLayout
+            android:id="@+id/layoutExpiryDate"
+            android:orientation="vertical"
+            app:errorText="Enter valid expiry date"
+            app:text="Expiry/Validity Date "
+            android:layout_width="0px"
+            android:layout_marginRight="25dp"
+            android:layout_weight="5.5"
+            android:layout_height="wrap_content">
+
+            <customviews.CardExpEditText
+                android:theme="@style/Sdk_EditTextTheme"
+                android:id="@+id/edtExpiry"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:padding="5dp"
+                android:hint="MM/YY"
+                android:imeOptions="actionNext"
+                android:background="@drawable/edt_normal"
+                android:maxLength="5"
+                android:layout_height="45dp" />
+        </customviews.ErrorEditLayout>
+
+        <customviews.ErrorEditLayout
+            android:id="@+id/layoutCVV"
+            android:orientation="vertical"
+            app:text="CVV"
+            app:errorText="Enter valid cvv"
+            android:layout_width="0px"
+            android:layout_weight="4.5"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+              <customviews.CVVEditText
+                    android:textDirection="locale"
+                android:id="@+id/edtCVV"
+                android:layout_width="match_parent"
+                android:inputType="numberPassword"
+                android:padding="5dp"
+                android:imeOptions="actionDone"
+                android:background="@drawable/edt_normal"
+                android:maxLength="3"
+                android:layout_height="45dp" />
+        </customviews.ErrorEditLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+          <CheckBox
+              android:id="@+id/chkSaveCard"
+              android:checked="false"
+              android:text="Save this card for future use"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+    </LinearLayout>
+      <customviews.CustomButton
+
+        style="@style/ButtonStyle"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/pay"
+        android:id="@+id/btnPay"/>
+</LinearLayout>
